@@ -536,7 +536,7 @@ std::string TrainingStrategy::write_refinement_type(void) const
    {
       return("NO_REFINEMENT");
    }
-   else if(refinement_type == NEWTON_METHOD)
+   else if(refinement_type == NEWTON_REFINEMENT_METHOD)
    {
       return("NEWTON_METHOD");
    }
@@ -645,7 +645,7 @@ std::string TrainingStrategy::write_refinement_type_text(void) const
    {
       return("none");
    }
-   else if(refinement_type == NEWTON_METHOD)
+   else if(refinement_type == NEWTON_REFINEMENT_METHOD)
    {
       return("Newton method");
    }
@@ -856,7 +856,7 @@ void TrainingStrategy::set_refinement_type(const RefinementType& new_refinement_
       }
       break;
 
-      case NEWTON_METHOD:
+      case NEWTON_REFINEMENT_METHOD:
       {
          Newton_method_pointer = new NewtonMethod(performance_functional_pointer);
       }
@@ -1113,7 +1113,7 @@ void TrainingStrategy::set_performance_functional_pointer(PerformanceFunctional*
       }
       break;
 
-      case NEWTON_METHOD:
+      case NEWTON_REFINEMENT_METHOD:
       {
            Newton_method_pointer->set_performance_functional_pointer(new_performance_functional_pointer);
       }
@@ -1253,7 +1253,7 @@ void TrainingStrategy::set_display(const bool& new_display)
       }
       break;
 
-      case NEWTON_METHOD:
+      case NEWTON_REFINEMENT_METHOD:
       {
            Newton_method_pointer->set_display(display);
       }
@@ -1736,7 +1736,7 @@ std::string TrainingStrategy::to_string(void) const
       }
       break;
 
-      case NEWTON_METHOD:
+      case NEWTON_REFINEMENT_METHOD:
       {
            buffer << Newton_method_pointer->to_string();
       }
@@ -1969,7 +1969,7 @@ tinyxml2::XMLDocument* TrainingStrategy::to_XML(void) const
       }
       break;
 
-      case NEWTON_METHOD:
+      case NEWTON_REFINEMENT_METHOD:
       {
            tinyxml2::XMLElement* refinement_element = document->NewElement("Refinement");
            training_strategy_element->LinkEndChild(refinement_element);
@@ -2119,7 +2119,7 @@ void TrainingStrategy::write_XML(tinyxml2::XMLPrinter& file_stream) const
        }
        break;
 
-       case NEWTON_METHOD:
+       case NEWTON_REFINEMENT_METHOD:
        {
             file_stream.OpenElement("Refinement");
 
@@ -2351,7 +2351,7 @@ void TrainingStrategy::from_XML(const tinyxml2::XMLDocument& document)
              }
              break;
 
-             case NEWTON_METHOD:
+             case NEWTON_REFINEMENT_METHOD:
              {
                   tinyxml2::XMLDocument new_document;
 
