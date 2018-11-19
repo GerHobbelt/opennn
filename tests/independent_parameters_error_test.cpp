@@ -13,6 +13,7 @@
 
 // Unit testing includes
 
+#include "independent_parameters_error.h"
 #include "independent_parameters_error_test.h"
 
 using namespace OpenNN;
