@@ -367,7 +367,7 @@ void ErrorTermTest::test_calculate_interlayers_Delta(void)
    assert_true(interlayers_Delta(0,0).get_columns_number() == 1, LOG);
 
    // Test
-/*
+//
    ds.set(1,10,5);
    ds.initialize_data(1.0);
 
@@ -395,7 +395,7 @@ void ErrorTermTest::test_calculate_interlayers_Delta(void)
    assert_true((interlayers_Delta[0] - numerical_interlayers_Delta).calculate_absolute_value() < 1.0e-3, LOG);
 
    // Test
-/*
+//
    ds.set(1,10,5);
    ds.randomize_data_normal();
 
