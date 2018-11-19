@@ -629,6 +629,7 @@ void SumSquaredErrorTest::test_calculate_Hessian(void)
 
    assert_true((Hessian - numerical_Hessian).calculate_absolute_value() < 1.0e-3, LOG);
 }
+*/
 
  /*  // Test activation hyperbolic tangent (single hidden layer)
 {
@@ -648,6 +649,7 @@ void SumSquaredErrorTest::test_calculate_Hessian(void)
 
    assert_true((Hessian - numerical_Hessian).calculate_absolute_value() < 1.0e-3, LOG);
 }
+*/
 
    // Test
 /*
