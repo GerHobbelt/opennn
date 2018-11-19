@@ -66,6 +66,7 @@
 // Performance functional
 
 #include "performance_functional.h"
+#include "performance_term.h"
 #include "error_term.h"
 #include "regularization_term.h"
 
