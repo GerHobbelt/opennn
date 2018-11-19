@@ -144,6 +144,113 @@ const bool& ThresholdSelectionAlgorithm::get_display(void) const
     return(display);
 }
 
+#if 1  // DF4IAH: taken from 'order_selection_algorithm' and adapted
+/*
+// void set_selection_performance_goal(const double&) method
+
+/// Sets the Selection performance goal for the threshold selection algorithm.
+/// @param new_selection_performance_goal Goal of the selection performance.
+
+void ThresholdSelectionAlgorithm::set_selection_performance_goal(const double& new_selection_performance_goal)
+{
+#ifdef __OPENNN_DEBUG__
+
+    if(new_selection_performance_goal < 0)
+    {
+        std::ostringstream buffer;
+
+        buffer << "OpenNN Exception: ThresholdSelectionAlgorithm class.\n"
+               << "void set_selection_performance_goal(const double&) method.\n"
+               << "Selection performance goal must be greater or equal than 0.\n";
+
+        throw std::logic_error(buffer.str());
+    }
+
+#endif
+
+    selection_performance_goal = new_selection_performance_goal;
+}
+*/
+
+// void set_maximum_iterations_number(const size_t&) method
+
+/// Sets the maximum iterations number for the threshold selection algorithm.
+/// @param new_maximum_iterations_number Maximum number of iterations.
+
+void ThresholdSelectionAlgorithm::set_maximum_iterations_number(const size_t& new_maximum_iterations_number)
+{
+#ifdef __OPENNN_DEBUG__
+
+    if(new_maximum_iterations_number <= 0)
+    {
+        std::ostringstream buffer;
+
+        buffer << "OpenNN Exception: ThresholdSelectionAlgorithm class.\n"
+               << "void set_maximum_iterations_number(const size_t&) method.\n"
+               << "Maximum iterations number must be greater than 0.\n";
+
+        throw std::logic_error(buffer.str());
+    }
+
+#endif
+
+    maximum_iterations_number = new_maximum_iterations_number;
+}
+
+
+// void set_maximum_time(const double&) method
+
+/// Sets the maximum time for the order selection algorithm.
+/// @param new_maximum_time Maximum time for the algorithm.
+
+void ThresholdSelectionAlgorithm::set_maximum_time(const double& new_maximum_time)
+{
+#ifdef __OPENNN_DEBUG__
+
+    if(new_maximum_time < 0)
+    {
+        std::ostringstream buffer;
+
+        buffer << "OpenNN Exception: ThresholdSelectionAlgorithm class.\n"
+               << "void set_maximum_time(const double&) method.\n"
+               << "Maximum time must be greater than 0.\n";
+
+        throw std::logic_error(buffer.str());
+    }
+
+#endif
+
+    maximum_time = new_maximum_time;
+}
+
+/*
+// void set_tolerance(const double&) method
+
+/// Set the tolerance for the errors in the trainings of the algorithm.
+/// @param new_tolerance Value of the tolerance.
+
+void ThresholdSelectionAlgorithm::set_tolerance(const double& new_tolerance)
+{
+#ifdef __OPENNN_DEBUG__
+
+    if(new_tolerance < 0)
+    {
+        std::ostringstream buffer;
+
+        buffer << "OpenNN Exception: ThresholdSelectionAlgorithm class.\n"
+               << "void set_tolerance(const double&) method.\n"
+               << "Tolerance must be equal or greater than 0.\n";
+
+        throw std::logic_error(buffer.str());
+    }
+
+#endif
+
+    tolerance = new_tolerance;
+}
+*/
+#endif
+
 // void set_training_strategy_pointer(TrainingStrategy*) method
 
 /// Sets a new training strategy pointer.

@@ -101,6 +101,8 @@ public:
 
        Vector< Vector<double> > binary_classification_test_data;
 
+       Vector<double> final_binary_classification_test;
+
        /// Value to optimize in the algorithm.
 
        Vector<double> function_data;
@@ -147,6 +149,13 @@ public:
     void set_reserve_function_data(const bool&);
 
     void set_display(const bool&);
+
+#if 1  // DF4IAH: taken from 'order_selection_algorithm.h'
+    //void set_selection_performance_goal(const double&);
+    void set_maximum_iterations_number(const size_t&);
+    void set_maximum_time(const double&);
+    //void set_tolerance(const double&);
+#endif
 
     // Errors calculation methods
 
