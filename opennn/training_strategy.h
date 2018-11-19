@@ -110,7 +110,7 @@ public:
     enum RefinementType
     {
        NO_REFINEMENT,
-       //NEWTON_METHOD,
+       NEWTON_REFINEMENT_METHOD,
        USER_REFINEMENT
     };
 

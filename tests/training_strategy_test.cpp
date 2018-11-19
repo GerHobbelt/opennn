@@ -281,7 +281,7 @@ void TrainingStrategyTest::test_from_XML(void)
 
     assert_true(ts2.get_initialization_type() == TrainingStrategy::RANDOM_SEARCH, LOG);
     assert_true(ts2.get_main_type() == TrainingStrategy::GRADIENT_DESCENT, LOG);
-    assert_true(ts2.get_refinement_type() == TrainingStrategy::NEWTON_METHOD, LOG);
+    assert_true(ts2.get_refinement_type() == TrainingStrategy::NEWTON_REFINEMENT_METHOD, LOG);
 }
 
 
