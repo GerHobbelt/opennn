@@ -3779,6 +3779,10 @@ void MultilayerPerceptron::to_PMML(tinyxml2::XMLElement* neural_network) const
         neural_network->SetAttribute("activationFunction","threshold");
         break;
 
+    case Perceptron::ActivationFunction::SymmetricThreshold:
+        neural_network->SetAttribute("activationFunction","symmetricThreshold");
+        break;
+
     case Perceptron::ActivationFunction::Logistic:
         neural_network->SetAttribute("activationFunction","logistic");
         break;
@@ -3812,6 +3816,10 @@ void MultilayerPerceptron::to_PMML(tinyxml2::XMLElement* neural_network) const
             {
             case Perceptron::ActivationFunction::Threshold:
                 neural_layer->SetAttribute("activationFunction","threshold");
+                break;
+
+            case Perceptron::ActivationFunction::SymmetricThreshold:
+                neural_layer->SetAttribute("activationFunction","symmetricThreshold");
                 break;
 
             case Perceptron::ActivationFunction::Logistic:
@@ -3917,6 +3925,10 @@ void MultilayerPerceptron::write_PMML(tinyxml2::XMLPrinter& file_stream, bool is
             {
             case Perceptron::ActivationFunction::Threshold:
                 file_stream.PushAttribute("activationFunction", "threshold");
+                break;
+
+            case Perceptron::ActivationFunction::SymmetricThreshold:
+                file_stream.PushAttribute("activationFunction", "symmetricThreshold");
                 break;
 
             case Perceptron::ActivationFunction::Logistic:

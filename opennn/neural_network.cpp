@@ -3638,6 +3638,10 @@ void NeuralNetwork::write_PMML(const std::string& file_name) const
         file_stream.PushAttribute("activationFunction","threshold");
         break;
 
+    case Perceptron::ActivationFunction::SymmetricThreshold:
+        file_stream.PushAttribute("activationFunction","symmetricThreshold");
+        break;
+
     case Perceptron::ActivationFunction::Logistic:
         file_stream.PushAttribute("activationFunction","logistic");
         break;
