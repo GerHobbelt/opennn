@@ -69,7 +69,7 @@ public:
 
     /// Enumeration of all possibles condition of stop for the algorithms.
 
-    enum StoppingCondition{PerfectConfusionMatrix, AlgorithmFinished};
+    enum StoppingCondition{PerfectConfusionMatrix, MaximumIterations, AlgorithmFinished};
 
     // STRUCTURES
 
@@ -183,6 +183,26 @@ protected:
     /// Display messages to screen.
 
     bool display;
+
+#if 1  // DF4IAH: taken out of order_selection_algorithm.h
+    // STOPPING CRITERIA
+
+    /// Goal value for the selection performance. It is used as a stopping criterion.
+
+    //double selection_performance_goal;
+
+    /// Maximum number of iterations to perform_order_selection. It is used as a stopping criterion.
+
+    size_t maximum_iterations_number;
+
+    /// Maximum selection algorithm time. It is used as a stopping criterion.
+
+    double maximum_time;
+
+    /// Tolerance for the error in the trainings of the algorithm.
+
+    //double tolerance;
+#endif
 };
 }
 
