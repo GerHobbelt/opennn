@@ -13,6 +13,7 @@
 
 // Unit testing includes
 
+#include "final_solutions_error.h"
 #include "final_solutions_error_test.h"
 
 using namespace OpenNN;
