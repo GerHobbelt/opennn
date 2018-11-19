@@ -393,7 +393,7 @@ void PerformanceTermTest::test_calculate_interlayers_Delta(void)
    numerical_interlayers_Delta = nd.calculate_Hessian(sse, &SumSquaredError::calculate_performance_combinations, 1, combinations);
 
    assert_true((interlayers_Delta[0] - numerical_interlayers_Delta).calculate_absolute_value() < 1.0e-3, LOG);
-
+*/
    // Test
 /*
    ds.set(1,10,5);
