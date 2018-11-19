@@ -13,6 +13,7 @@
 
 // Unit testing includes
 
+#include "inverse_sum_squared_error.h"
 #include "inverse_sum_squared_error_test.h"
 
 using namespace OpenNN;
