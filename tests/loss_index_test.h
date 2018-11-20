@@ -11,8 +11,8 @@
 /*                                                                                                              */
 /****************************************************************************************************************/
 
-#ifndef __PERFORMANCEFUNCTIONALTEST_H__
-#define __PERFORMANCEFUNCTIONALTEST_H__
+#ifndef __LOSSINDEXTEST_H__
+#define __LOSSINDEXTEST_H__
 
 // Unit testing includes
 
