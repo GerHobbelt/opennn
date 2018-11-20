@@ -11,8 +11,8 @@
 /*                                                                                                              */
 /****************************************************************************************************************/
 
-#ifndef __PERFORMANCEFUNCTIONAL_H__
-#define __PERFORMANCEFUNCTIONAL_H__
+#ifndef __LOSSINDEX_H__
+#define __LOSSINDEX_H__
 
 // System includes
 
