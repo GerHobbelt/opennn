@@ -66,8 +66,7 @@
 
 // Loss index
 
-//#include "performance_functional.h"  // TODO DF4IAH: when OK to be removed
-//#include "performance_term.h"
+#include "performance_term.h"
 #include "loss_index.h"
 #include "error_term.h"
 #include "regularization_term.h"
