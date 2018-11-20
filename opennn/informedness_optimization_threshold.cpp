@@ -169,9 +169,9 @@ InformednessOptimizationThreshold::InformednessOptimizationThresholdResults* Inf
 
     InformednessOptimizationThresholdResults* results = new InformednessOptimizationThresholdResults();
 
-    const PerformanceFunctional* performance_functional_pointer = training_strategy_pointer->get_performance_functional_pointer();
+    const LossIndex* loss_index_pointer = training_strategy_pointer->get_loss_index_pointer();
 
-    NeuralNetwork* neural_network_pointer = performance_functional_pointer->get_neural_network_pointer();
+    NeuralNetwork* neural_network_pointer = loss_index_pointer->get_neural_network_pointer();
 
     double current_threshold = step;
 
