@@ -41,6 +41,7 @@
 #include "growing_inputs.h"
 #include "pruning_inputs.h"
 #include "genetic_algorithm.h"
+#include "ant_colony_optimization.h"
 #include "threshold_selection_algorithm.h"
 #include "f1_score_optimization_threshold.h"
 #include "matthew_correlation_optimization_threshold.h"
@@ -63,10 +64,11 @@
 #include "unscaling_layer.h"
 #include "neural_network.h"
 
-// Performance functional
+// Loss index
 
-#include "performance_functional.h"
-#include "performance_term.h"
+//#include "performance_functional.h"  // TODO DF4IAH: when OK to be removed
+//#include "performance_term.h"
+#include "loss_index.h"
 #include "error_term.h"
 #include "regularization_term.h"
 

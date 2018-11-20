@@ -18,7 +18,8 @@
 
 using namespace OpenNN;
 
-class Polynomial : public PerformanceFunctional, public PerformanceTerm
+// class Polynomial : public PerformanceFunctional, public PerformanceTerm  // TODO DF4IAH: when OK to be removed
+class Polynomial : public LossIndex
 {
 
 public:
