@@ -48,6 +48,7 @@ ThresholdSelectionAlgorithm::ThresholdSelectionAlgorithm(TrainingStrategy* new_t
 ThresholdSelectionAlgorithm::ThresholdSelectionAlgorithm(const std::string&)
     : training_strategy_pointer(NULL)
 {
+    set_default();
     //load(file_name);
 }
 
@@ -60,6 +61,7 @@ ThresholdSelectionAlgorithm::ThresholdSelectionAlgorithm(const std::string&)
 ThresholdSelectionAlgorithm::ThresholdSelectionAlgorithm(const tinyxml2::XMLDocument& )
     : training_strategy_pointer(NULL)
 {
+    set_default();
     //from_XML(order_selection_document);
 }
 

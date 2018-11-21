@@ -81,7 +81,10 @@ public:
     {
        explicit ThresholdSelectionResults(void)
        {
-
+    	   final_threshold			= 	0.;
+    	   final_function_value		=	0.;
+    	   iterations_number		=	0;
+    	   stopping_condition		=	AlgorithmFinished;
        }
 
        virtual ~ThresholdSelectionResults(void)
