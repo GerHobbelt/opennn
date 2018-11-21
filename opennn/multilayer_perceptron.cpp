@@ -3088,7 +3088,7 @@ Vector< Matrix<double> > MultilayerPerceptron::calculate_layers_combination_Jaco
 
     for(int i = (int)layers_number-1; i > -1; i--)
     {
-        layers_Jacobian[i] = layers_Jacobian[i];
+        //layers_Jacobian[i] = layers_Jacobian[i];  // TODO DF4IAH: layers_Jacobian[i] = layers_Jacobian[layers_number]  ???
 
         for(int j = (int)i-1; j > -1; j--)
         {
