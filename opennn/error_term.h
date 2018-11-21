@@ -320,6 +320,8 @@ public:
 
    virtual Vector<double> calculate_gradient(const Vector<double>&) const;
 
+   virtual Vector<double> calculate_gradient(const double&, const double&) const;
+
    /// Returns the error term Hessian.
 
    virtual Matrix<double> calculate_output_Hessian(const Vector<double>&, const Vector<double>&) const

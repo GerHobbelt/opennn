@@ -1787,6 +1787,15 @@ Vector<double> ErrorTerm::calculate_gradient(const Vector<double>& parameters) c
 }
 
 
+Vector<double> ErrorTerm::calculate_gradient(const double& total_training_instances_number, const double& loss) const
+{
+	// TODO DF4IAH: this method has to be overwritten
+	std::cerr << "ERROR in  'Vector<double> ErrorTerm::calculate_gradient(const double& total_training_instances_number, const double& loss) const'" << std::endl;
+	abort();
+	return Vector<double>(0);
+}
+
+
 // Matrix<double> calculate_Hessian(void) const method
 
 /// @todo
