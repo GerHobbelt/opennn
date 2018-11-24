@@ -483,12 +483,13 @@ Vector< LinearRegressionParameters<double> > TestingAnalysis::calculate_linear_r
    const Instances& instances = data_set_pointer->get_instances();
 
    const size_t testing_instances_number = instances.count_testing_instances_number();
+   (void) testing_instances_number;
 
    // Neural network stuff
 
    const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-   const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
+   //const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
    #ifdef __OPENNN_DEBUG__
 
