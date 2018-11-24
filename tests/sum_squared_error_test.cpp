@@ -21,21 +21,21 @@ using namespace OpenNN;
 
 // GENERAL CONSTRUCTOR
 
-SumSquaredErrorTest::SumSquaredErrorTest(void) : UnitTesting() 
+SumSquaredErrorTest::SumSquaredErrorTest() : UnitTesting() 
 {
 }
 
 
 // DESTRUCTOR
 
-SumSquaredErrorTest::~SumSquaredErrorTest(void) 
+SumSquaredErrorTest::~SumSquaredErrorTest() 
 {
 }
 
 
 // METHODS
 
-void SumSquaredErrorTest::test_constructor(void)
+void SumSquaredErrorTest::test_constructor()
 {
    message += "test_constructor\n";
 
@@ -65,13 +65,13 @@ void SumSquaredErrorTest::test_constructor(void)
 }
 
 
-void SumSquaredErrorTest::test_destructor(void)
+void SumSquaredErrorTest::test_destructor()
 {
    message += "test_destructor\n";
 }
 
 
-void SumSquaredErrorTest::test_calculate_loss(void)   
+void SumSquaredErrorTest::test_calculate_loss()   
 {
    message += "test_calculate_loss\n";
 
@@ -150,7 +150,7 @@ void SumSquaredErrorTest::test_calculate_loss(void)
 }
 
 
-void SumSquaredErrorTest::test_calculate_gradient(void)
+void SumSquaredErrorTest::test_calculate_gradient()
 {
    message += "test_calculate_gradient\n";
 
@@ -320,7 +320,7 @@ void SumSquaredErrorTest::test_calculate_gradient(void)
 
 // @todo
 
-void SumSquaredErrorTest::test_calculate_Hessian(void)
+void SumSquaredErrorTest::test_calculate_Hessian()
 {
    message += "test_calculate_Hessian\n";
 
@@ -573,8 +573,8 @@ void SumSquaredErrorTest::test_calculate_Hessian(void)
    Hessian = sse.calculate_single_hidden_layer_Hessian();
    Matrix<double> complete_Hessian = sse.calculate_Hessian();
 
-   std::cout << "Single hidden layer Hessian: \n" << Hessian << std::endl;
-   std::cout << "Complete Hessian: \n" << complete_Hessian << std::endl;
+   cout << "Single hidden layer Hessian: \n" << Hessian << endl;
+   cout << "Complete Hessian: \n" << complete_Hessian << endl;
 
    numerical_Hessian = nd.calculate_Hessian(sse, &SumSquaredError::calculate_loss, parameters);
 
@@ -619,8 +619,8 @@ void SumSquaredErrorTest::test_calculate_Hessian(void)
 
    numerical_Hessian = nd.calculate_Hessian(sse, &SumSquaredError::calculate_error, parameters);
 
-   std::cout << "Hessian: \n" << Hessian << std::endl;
-   std::cout << "Numerical Hessian: \n" << numerical_Hessian << std::endl;
+   cout << "Hessian: \n" << Hessian << endl;
+   cout << "Numerical Hessian: \n" << numerical_Hessian << endl;
 
 //   Vector<size_t> columns(4,1,5);
 //   Vector<size_t> rows(0,1,1);
@@ -707,13 +707,13 @@ void SumSquaredErrorTest::test_calculate_Hessian(void)
 }
 
 
-void SumSquaredErrorTest::test_calculate_terms(void)
+void SumSquaredErrorTest::test_calculate_terms()
 {
    message += "test_calculate_terms\n";
 }
 
 
-void SumSquaredErrorTest::test_calculate_terms_Jacobian(void)
+void SumSquaredErrorTest::test_calculate_terms_Jacobian()
 {   
    message += "test_calculate_terms_Jacobian\n";
 
@@ -829,7 +829,7 @@ void SumSquaredErrorTest::test_calculate_terms_Jacobian(void)
 }
 
 
-void SumSquaredErrorTest::test_calculate_selection_loss(void)
+void SumSquaredErrorTest::test_calculate_selection_loss()
 {
    message += "test_calculate_selection_loss\n";
 
@@ -853,7 +853,7 @@ void SumSquaredErrorTest::test_calculate_selection_loss(void)
 }
 
 
-void SumSquaredErrorTest::test_calculate_squared_errors(void)
+void SumSquaredErrorTest::test_calculate_squared_errors()
 {
    message += "test_calculate_squared_errors\n";
 
@@ -901,7 +901,7 @@ void SumSquaredErrorTest::test_calculate_squared_errors(void)
 }
 
 
-void SumSquaredErrorTest::test_to_XML(void)   
+void SumSquaredErrorTest::test_to_XML()   
 {
     message += "test_to_XML\n";
 
@@ -919,7 +919,7 @@ void SumSquaredErrorTest::test_to_XML(void)
 }
 
 
-void SumSquaredErrorTest::test_from_XML(void)
+void SumSquaredErrorTest::test_from_XML()
 {
     message += "test_from_XML\n";
 
@@ -942,7 +942,7 @@ void SumSquaredErrorTest::test_from_XML(void)
 }
 
 
-void SumSquaredErrorTest::run_test_case(void)
+void SumSquaredErrorTest::run_test_case()
 {
    message += "Running sum squared error test case...\n";
 
@@ -980,7 +980,7 @@ void SumSquaredErrorTest::run_test_case(void)
 
 
 // OpenNN: Open Neural Networks Library.
-// Copyright (C) 2005-2016 Roberto Lopez.
+// Copyright (C) 2005-2018 Artificial Intelligence Techniques, SL.
 //
 // This library is free software; you can redistribute it and/or
 // modify it under the terms of the GNU Lesser General Public
