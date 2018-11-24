@@ -301,6 +301,7 @@ void WeightedSquaredRegressionError::set_normalization_coefficient()
     const Vector<size_t> targets_indices = variables.arrange_targets_indices();
 
     const size_t negatives = data_set_pointer->calculate_training_negatives(targets_indices[0]);
+    (void) negatives;
 
 //    normalization_coefficient = negatives*negatives_weight*0.5;
 }
@@ -323,8 +324,8 @@ double WeightedSquaredRegressionError::calculate_error() const
 
     const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-    const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
-    const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
+    // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+    // const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
     // Data set stuff
 
@@ -434,8 +435,8 @@ double WeightedSquaredRegressionError::calculate_error(const Vector<double>& par
 
     const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-    const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
-    const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
+    // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+    // const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
     // Data set stuff
 
@@ -524,8 +525,8 @@ double WeightedSquaredRegressionError::calculate_selection_error() const
 
     const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-    const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
-    const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
+    // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+    // const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
     const Instances& instances = data_set_pointer->get_instances();
 
@@ -590,6 +591,7 @@ double WeightedSquaredRegressionError::calculate_selection_error() const
     }
 
     const size_t negatives = data_set_pointer->calculate_selection_negatives(targets_indices[0]);
+    (void) negatives;
 
 //    const double normalization_coefficient = negatives*negatives_weight*0.5;
 
@@ -615,8 +617,8 @@ double WeightedSquaredRegressionError::calculate_error(const double& given_norma
 
     const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-    const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
-    const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
+    // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+    // const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
     // Data set stuff
 
@@ -724,8 +726,8 @@ double WeightedSquaredRegressionError::calculate_error(const Vector<double>& par
 
     const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-    const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
-    const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
+    // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+    // const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
     // Data set stuff
 
@@ -811,8 +813,8 @@ double WeightedSquaredRegressionError::calculate_selection_error(const double& g
 
     const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-    const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
-    const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
+    // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+    // const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
     const Instances& instances = data_set_pointer->get_instances();
 
@@ -1225,8 +1227,8 @@ Vector<double> WeightedSquaredRegressionError::calculate_terms() const
 
     const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-    const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
-    const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
+    // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+    // const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
     // Data set stuff
 
@@ -1466,6 +1468,7 @@ Matrix<double> WeightedSquaredRegressionError::calculate_terms_Jacobian() const
 
     const double negatives = training_instances_number
                            - data_set_pointer->arrange_training_target_data().get_column(0).calculate_sum();
+    (void) negatives;
 
 //    const double normalization_coefficient = negatives*negatives_weight*0.5;
 

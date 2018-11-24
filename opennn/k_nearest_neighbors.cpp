@@ -180,6 +180,7 @@ Vector<size_t> KNearestNeighbors::calculate_k_nearest_neighbors(const Vector<dou
     const Instances& instances = data_set_pointer->get_instances();
 
     const size_t instances_number = instances.count_used_instances_number();
+    (void) instances_number;
 
     const Vector<size_t> nearest_neighbors = distances.calculate_k_minimal_indices(k);
 
@@ -286,6 +287,7 @@ Vector<double> KNearestNeighbors::calculate_output(const Vector<double>& input) 
     const Instances& instances = data_set_pointer->get_instances();
 
     const size_t instances_number = instances.count_used_instances_number();
+    (void) instances_number;
 
 
     const Matrix<double>& data = data_set_pointer->get_data();

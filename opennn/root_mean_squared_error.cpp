@@ -207,8 +207,8 @@ double RootMeanSquaredError::calculate_error() const
 
    const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-   const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
-   const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
+   // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+   // const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
    // Data set stuff
 
@@ -299,8 +299,8 @@ double RootMeanSquaredError::calculate_error(const Vector<double>& parameters) c
 
    const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-   const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
-   const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
+   // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+   // const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
    // Data set stuff
 
@@ -376,8 +376,8 @@ double RootMeanSquaredError::calculate_selection_error() const
 
    const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-   const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
-   const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
+   // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+   // const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
    // Data set stuff
 
@@ -467,7 +467,7 @@ Vector<double> RootMeanSquaredError::calculate_gradient() const
 
        const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-       const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+       // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
        const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
        const size_t layers_number = multilayer_perceptron_pointer->get_layers_number();
@@ -583,7 +583,7 @@ Vector<double> RootMeanSquaredError::calculate_gradient(const double& total_trai
 
        const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-       const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+       // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
        const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
        const size_t layers_number = multilayer_perceptron_pointer->get_layers_number();

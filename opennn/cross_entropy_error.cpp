@@ -383,7 +383,7 @@ double CrossEntropyError::calculate_error(const Vector<double>& parameters) cons
 
     const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-    const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+    // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
     const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
     // Data set stuff
@@ -469,7 +469,7 @@ double CrossEntropyError::calculate_minimum_loss() const
 
     const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-    const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+    // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
     const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
     // Data set stuff
@@ -555,7 +555,7 @@ double CrossEntropyError::calculate_selection_error() const
 
    const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-   const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+   // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
    const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
    // Data set stuff
@@ -640,7 +640,7 @@ double CrossEntropyError::calculate_minimum_selection_error() const
 
     const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-    const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+    // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
     const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
     // Data set stuff
@@ -724,7 +724,7 @@ double CrossEntropyError::calculate_error_unnormalized() const
 
    const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-   const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+   // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
    const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
    // Data set stuff
@@ -831,7 +831,7 @@ double CrossEntropyError::calculate_error_unnormalized(const Vector<double>& par
 
     const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-    const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+    // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
     const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
     // Data set stuff
@@ -909,7 +909,7 @@ double CrossEntropyError::calculate_minimum_loss_unnormalized() const
 
     const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-    const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+    // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
     const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
     // Data set stuff
@@ -995,7 +995,7 @@ double CrossEntropyError::calculate_selection_error_unnormalized() const
 
    const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-   const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+   // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
    const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
    // Data set stuff
@@ -1078,7 +1078,7 @@ double CrossEntropyError::calculate_minimum_selection_error_unnormalized() const
 
     const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-    const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+    // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
     const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
     // Data set stuff

@@ -9319,7 +9319,7 @@ Vector<T> Vector<T>::take_out(const size_t &position,
 template <class T>
 Vector<T> Vector<T>::insert_element(const size_t &index, const T &value) const
 {
-  const size_t this_size = this->size();
+  // const size_t this_size = this->size();
 
 // Control sentence(if debug)
 

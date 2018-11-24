@@ -916,6 +916,9 @@ Matrix<T>::Matrix(const Matrix& other_matrix) : vector<T>(other_matrix.begin(), 
 template <class T>
 Matrix<T>::Matrix(const initializer_list< Vector<T> >& new_columns) : vector<T>()
 {
+    rows_number = 0;
+    columns_number = 0;
+
     set(new_columns);
 }
 
@@ -2397,7 +2400,7 @@ size_t Matrix<T>::count_rows_equal_to(const T& value) const
 template <class T>
 size_t Matrix<T>::count_rows_equal_to(const Vector<size_t>& column_indices, const T& value) const
 {
-    const size_t column_indices_size = column_indices.size();
+    //const size_t column_indices_size = column_indices.size();
 
     size_t count = 0;
 
@@ -4230,7 +4233,7 @@ Matrix<T> Matrix<T>::left_join(const Matrix<T>& other_matrix, const string& matr
     const size_t matrix_1_columns_1_size = matrix_1_columns_1.size();
     const size_t matrix_1_columns_2_size = matrix_1_columns_2.size();
     const size_t matrix_2_columns_1_size = matrix_2_columns_1.size();
-    const size_t matrix_2_columns_2_size = matrix_2_columns_2.size();
+    // const size_t matrix_2_columns_2_size = matrix_2_columns_2.size();
 
     const Vector<T> header_1 = this->get_header();
     const Vector<T> header_2 = other_matrix.get_header();

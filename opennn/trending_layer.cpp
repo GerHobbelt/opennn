@@ -496,6 +496,7 @@ void TrendingLayer::set_slopes(const Vector<double>& new_slopes)
 void TrendingLayer::set_slope(const size_t& index, const double& new_slope)
 {
    const size_t trending_neurons_number = get_trending_neurons_number();
+   (void) trending_neurons_number;
 
    // Control sentence (if debug)
 

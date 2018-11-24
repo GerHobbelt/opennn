@@ -3481,7 +3481,7 @@ Vector<double> NeuralNetwork::calculate_outputs(const Vector<double>& inputs, co
 
 Matrix<double> NeuralNetwork::calculate_output_data(const Matrix<double>& input_data) const
 {
-    const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+    // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
     const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
     // Control sentence(if debug)

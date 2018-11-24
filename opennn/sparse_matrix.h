@@ -6944,6 +6944,8 @@ Vector<T> SparseMatrix<T>::solve_LDLT(const Vector<double>& b) const /// @todo
     const Eigen::Map<Eigen::VectorXd> b_eigen((double*)b.data(),rows_number);
     Eigen::Map<Eigen::VectorXd> solution_eigen(solution.data(), rows_number);
 
+    (void) b_eigen;
+    (void) solution_eigen;
     //    solution_eigen = this_eigen.ldlt().solve(b_eigen);
 
     return(solution);
@@ -7916,7 +7918,7 @@ template <class T>
 SparseMatrix<double> SparseMatrix<T>::dot(const SparseMatrix<double>& other_sparse_matrix) const /// @todo
 {
     const size_t other_columns_number = other_sparse_matrix.get_columns_number();
-    const size_t other_rows_number = other_sparse_matrix.get_rows_number();
+    // const size_t other_rows_number = other_sparse_matrix.get_rows_number();
 
     // Control sentence(if debug)
 
@@ -7950,7 +7952,7 @@ template <class T>
 Matrix<T> SparseMatrix<T>::dot(const Matrix<T>& other_matrix) const /// @todo
 {
     const size_t other_columns_number = other_matrix.get_columns_number();
-    const size_t other_rows_number = other_matrix.get_rows_number();
+    // const size_t other_rows_number = other_matrix.get_rows_number();
 
     // Control sentence(if debug)
 

@@ -377,8 +377,8 @@ double MeanSquaredError::calculate_selection_error() const
 
    const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-   const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
-   const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
+   // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+   // const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
    const Instances& instances = data_set_pointer->get_instances();
 
@@ -480,7 +480,7 @@ Vector<double> MeanSquaredError::calculate_gradient() const
 
    const ConditionsLayer* conditions_layer_pointer = has_conditions_layer ? neural_network_pointer->get_conditions_layer_pointer() : NULL;
 
-   const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+   // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
    const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
    const size_t layers_number = multilayer_perceptron_pointer->get_layers_number();
@@ -635,8 +635,8 @@ Vector<double> MeanSquaredError::calculate_terms() const
 
    const MultilayerPerceptron* multilayer_perceptron_pointer = neural_network_pointer->get_multilayer_perceptron_pointer();
 
-   const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
-   const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
+   // const size_t inputs_number = multilayer_perceptron_pointer->get_inputs_number();
+   // const size_t outputs_number = multilayer_perceptron_pointer->get_outputs_number();
 
    // Data set stuff
 
