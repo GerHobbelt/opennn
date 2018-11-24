@@ -13913,7 +13913,7 @@ Matrix<double> Matrix<T>::string_to_double() const
        }
        catch(const logic_error&)
        {
-          new_matrix[i] = -99.9;
+    	   new_matrix[i] = -99.9;
        }
    }
 
@@ -13934,11 +13934,11 @@ Matrix<size_t> Matrix<T>::string_to_size_t() const
    {
        try
        {
-           new_matrix[i] =(size_t)stoi((*this)[i]);
+    	   new_matrix[i] =(size_t)stoi((*this)[i]);
        }
        catch(const logic_error&)
        {
-          new_matrix[i] = -99.9;
+    	   new_matrix[i] = ULONG_MAX;
        }
    }
 

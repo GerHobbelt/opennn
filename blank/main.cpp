@@ -15,7 +15,13 @@
 
 #include <iostream>
 #include <stdlib.h>
-#include <conio.h>
+
+#ifdef _WIN32
+# include <conio.h>
+#else
+# include <curses.h>
+#endif
+
 #include <fstream>
 #include <sstream>
 #include <string>
