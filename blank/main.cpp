@@ -44,11 +44,6 @@ int main(void)
 {
     cout << "Hello world" << endl;
 
-    DataSet dt;
-
-
-
-
     return 0;
 
 }
