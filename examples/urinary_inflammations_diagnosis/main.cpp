@@ -146,6 +146,7 @@ int main(void)
         genetic_algorithm_pointer->set_display(true);
 
         ModelSelection::ModelSelectionResults model_selection_results = model_selection.perform_inputs_selection();
+        (void) model_selection_results;
 
         // Testing analysis
 

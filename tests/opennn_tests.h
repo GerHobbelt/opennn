@@ -21,8 +21,6 @@
 #include "vector_test.h"
 #include "matrix_test.h"
 #include "sparse_matrix_test.h"
-#include "numerical_differentiation_test.h"
-#include "numerical_integration_test.h"
 #include "ordinary_differential_equations_test.h"
 
 #include "instances_test.h"
@@ -59,9 +57,6 @@
 #include "weighted_squared_error_test.h"
 #include "minkowski_error_test.h"
 #include "cross_entropy_error_test.h"
-#include "inverse_sum_squared_error_test.h"
-#include "final_solutions_error_test.h"
-#include "independent_parameters_error_test.h"
 #include "outputs_integrals_test.h"
 #include "neural_parameters_norm_test.h"
 #include "solutions_error_test.h"

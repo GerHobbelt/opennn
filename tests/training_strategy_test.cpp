@@ -137,7 +137,7 @@ void TrainingStrategyTest::test_initialize_layers_autoencoding()
     nn.set(architecture);
 
     ts.initialize_layers_autoencoding();
-
+*/
     // Test
 /*
     ds.set(2,3,1);

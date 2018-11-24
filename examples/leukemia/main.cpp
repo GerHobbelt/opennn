@@ -131,6 +131,7 @@ int main(void)
         growing_inputs_pointer->set_maximum_selection_failures(3);
 
         ModelSelection::ModelSelectionResults model_selection_results = model_selection.perform_inputs_selection();
+        (void) model_selection_results;
 
         instances_pointer->set_training();
 

@@ -166,24 +166,6 @@ int main()
          tests_passed_count += sparse_matrix_test.get_tests_passed_count();
          tests_failed_count += sparse_matrix_test.get_tests_failed_count();
       }
-      else if(test == "numerical_differentiation")
-      {
-         NumericalDifferentiationTest test_numerical_differentiation;
-         test_numerical_differentiation.run_test_case();
-         message += test_numerical_differentiation.get_message();
-         tests_count += test_numerical_differentiation.get_tests_count();
-         tests_passed_count += test_numerical_differentiation.get_tests_passed_count();
-         tests_failed_count += test_numerical_differentiation.get_tests_failed_count();
-      }
-      else if(test == "numerical_integration")
-      {
-         NumericalIntegrationTest test_numerical_integration;
-         test_numerical_integration.run_test_case();
-         message += test_numerical_integration.get_message();
-         tests_count += test_numerical_integration.get_tests_count();
-         tests_passed_count += test_numerical_integration.get_tests_passed_count();
-         tests_failed_count += test_numerical_integration.get_tests_failed_count();
-      }
 
       //
       // D A T A   S E T   T E S T S
@@ -733,24 +715,6 @@ int main()
           tests_count += sparse_matrix_test.get_tests_count();
           tests_passed_count += sparse_matrix_test.get_tests_passed_count();
           tests_failed_count += sparse_matrix_test.get_tests_failed_count();
-
-          // numerical differentiation
-
-          NumericalDifferentiationTest test_numerical_differentiation;
-          test_numerical_differentiation.run_test_case();
-          message += test_numerical_differentiation.get_message();
-          tests_count += test_numerical_differentiation.get_tests_count();
-          tests_passed_count += test_numerical_differentiation.get_tests_passed_count();
-          tests_failed_count += test_numerical_differentiation.get_tests_failed_count();
-
-          // numerical integration
-
-          NumericalIntegrationTest test_numerical_integration;
-          test_numerical_integration.run_test_case();
-          message += test_numerical_integration.get_message();
-          tests_count += test_numerical_integration.get_tests_count();
-          tests_passed_count += test_numerical_integration.get_tests_passed_count();
-          tests_failed_count += test_numerical_integration.get_tests_failed_count();
 
           // D A T A   S E T   T E S T S
 

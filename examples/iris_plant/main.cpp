@@ -141,6 +141,7 @@ int main(void)
         golden_section_order_pointer->set_tolerance(1.0e-7);
 
         ModelSelection::ModelSelectionResults model_selection_results = model_selection.perform_order_selection();
+        (void) model_selection_results;
 
         // Testing analysis
 

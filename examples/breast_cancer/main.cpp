@@ -125,6 +125,7 @@ int main(void)
         simulated_annealing_order_pointer->set_maximum_iterations_number(15);
 
         ModelSelection::ModelSelectionResults model_selection_results = model_selection.perform_order_selection();
+        (void) model_selection_results;
 
         // Testing analysis
 
