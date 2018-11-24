@@ -6717,7 +6717,7 @@ Matrix< Vector<double> > DataSet::calculate_cross_correlation(void) const
 void DataSet::generate_data_approximation(const size_t& instances_number, const size_t& variables_number)
 {
     const size_t inputs_number = variables_number-1;
-    const size_t targets_number = 1;
+//    const size_t targets_number = 1;
 
 //    Matrix<double> input_data(instances_number, inputs_number);
 //    input_data.randomize_uniform(-2.048, 2.048);
