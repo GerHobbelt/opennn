@@ -1,0 +1,7 @@
+include_directories(${CMAKE_SOURCE_DIR}/opennn)
+
+set(yacht_hydrodynamics_productionSrcs main.cpp)
+add_executable(yacht_hydrodynamics_production ${yacht_hydrodynamics_productionSrcs})
+target_link_libraries(yacht_hydrodynamics_production libOpenNN)
+
+install(TARGETS yacht_hydrodynamics_production DESTINATION bin)

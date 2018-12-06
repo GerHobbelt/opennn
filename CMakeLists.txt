@@ -32,6 +32,6 @@ add_subdirectory(opennn)
 include_directories(opennn)
 add_subdirectory(examples)
 add_subdirectory(blank)
-add_subdirectory(tests)
+#add_subdirectory(tests)
 
 include(CPack)

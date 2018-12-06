@@ -1,0 +1,7 @@
+include_directories(${CMAKE_SOURCE_DIR}/opennn)
+
+set(urinary_inflammations_diagnosisSrcs main.cpp)
+add_executable(urinary_inflammations_diagnosis ${urinary_inflammations_diagnosisSrcs})
+target_link_libraries(urinary_inflammations_diagnosis libOpenNN)
+
+install(TARGETS urinary_inflammations_diagnosis DESTINATION bin)
