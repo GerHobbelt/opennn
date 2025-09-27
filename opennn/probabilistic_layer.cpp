@@ -172,7 +172,7 @@ const Tensor<type, 2>& ProbabilisticLayer::get_synaptic_weights() const
 }
 
 
-/// Returns the biases from a given vector of paramters for the layer.
+/// Returns the biases from a given vector of parameters for the layer.
 /// @param parameters Parameters of the layer.
 
 Tensor<type, 2> ProbabilisticLayer::get_biases(Tensor<type, 1>& parameters) const
@@ -185,7 +185,7 @@ Tensor<type, 2> ProbabilisticLayer::get_biases(Tensor<type, 1>& parameters) cons
 }
 
 
-/// Returns the synaptic weights from a given vector of paramters for the layer.
+/// Returns the synaptic weights from a given vector of parameters for the layer.
 /// @param parameters Parameters of the layer.
 
 Tensor<type, 2> ProbabilisticLayer::get_synaptic_weights(Tensor<type, 1>& parameters) const
